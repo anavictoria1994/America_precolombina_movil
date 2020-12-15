@@ -1,12 +1,10 @@
-import 'dart:developer';
-import 'package:america_precolombina/src/providers/menu_provider.dart';
 import 'package:flutter/material.dart';
 
-class Nivel1_maya extends StatelessWidget {
+class Nivel3_maya extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Nivel 1 maya')),
+      appBar: AppBar(title: Text('Nivel 3 maya')),
       body: PageView(
         children: [
           Container(
@@ -21,17 +19,23 @@ class Nivel1_maya extends StatelessWidget {
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(
-                              'lib/src/recursos/ubicacionmaya.jpg'))),
+                              'lib/src/recursos/dioskukulkanmaya.jpg'))),
                 ),
                 SizedBox(
                   height: 20.0,
                 ),
-                Text('Ubicación:',
+                Text('Dios Kukulkán:',
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold)),
-                Container(child: _lista()),
+                Container(
+                  child: Text(
+                    'En lengua maya significa "serpiente emplumada". En la mitología maya, Kukulkán es el dios de las tempestades. Creó vida por medio del agua y enseñó a los hombres a producir fuego. Es conocido también por: Qucumatz, Cuculcán o Kukulkán.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20),
+                  ),
+                )
               ],
             ),
           ),
@@ -47,17 +51,22 @@ class Nivel1_maya extends StatelessWidget {
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(
-                              'lib/src/recursos/gobernantemaya.jpg'))),
+                              'lib/src/recursos/dioshurakanmaya.jpg'))),
                 ),
                 SizedBox(
                   height: 30.0,
                 ),
-                Text('Gobernante destacado:',
+                Text('Dios Hurakán:',
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold)),
-                /*Container(child:)*/
+                Container(
+                  child: Text(
+                      ' En lengua maya significa "el de una sola pierna" o "cojo", dios del viento, tormenta y fuego, también conocido como "corazón del cielo". Fue también uno de los trece dioses creadores que ayudaron a construir la humanidad durante el tercer intento.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 20)),
+                )
               ],
             ),
           ),
@@ -69,27 +78,27 @@ class Nivel1_maya extends StatelessWidget {
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width,
-                  height: 250.0,
+                  height: 280.0,
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(
-                              'lib/src/recursos/temploguerrerosmaya.jpg'))),
+                              'lib/src/recursos/diostepeumaya.jpg'))),
                 ),
                 SizedBox(
-                  height: 15.0,
+                  height: 20.0,
                 ),
-                Text('Construccion El Templo de los Guerreros:',
+                Text('Dios Tepeu:',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold)),
-                /* Container(
+                Container(
                   child: Text(
-                      ,
+                      'Tepeu era un dios del cielo con poderes  y sabiduría, el cual participó en la creación de la humanidad, este proceso de creación tuvo dos intentos fallidos hasta que por tercera vez, pudieron crear a un ser con alma, cuerpo y espíritu capaz de brindarles culto y adoración.',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20)),
-                )*/
+                )
               ],
             ),
           ),
@@ -101,57 +110,52 @@ class Nivel1_maya extends StatelessWidget {
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width,
-                  height: 250.0,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('lib/src/recursos/tikalmaya.jpg'))),
-                ),
-                SizedBox(
-                  height: 40.0,
-                ),
-                Text('Construccion La Ciudad de Tikal:',
-                    style: TextStyle(
-                        fontSize: 25,
-                        color: Colors.blue,
-                        fontWeight: FontWeight.bold)),
-                /* Container(
-                  child: Text(
-                      ,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 20)),
-                )*/
-              ],
-            ),
-          ),
-          Container(
-            child: Column(
-              children: <Widget>[
-                SizedBox(
-                  height: 50.0,
-                ),
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 240.0,
+                  height: 280.0,
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(
-                              'lib/src/recursos/inscripcionesmayas.jpg'))),
+                              'lib/src/recursos/elpajarodziucartoon.jpg'))),
                 ),
                 SizedBox(
-                  height: 30.0,
+                  height: 20.0,
                 ),
-                Text('Construccion El Templo de las Inscripciones:',
-                    textAlign: TextAlign.center,
+                Text('Dziú y el maíz:',
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold)),
-                /* Container(
+                Container(
                   child: Text(
-                      ,
+                      ' La leyenda se centra en Dziú, un pájaro que fue reconocido por su valentía. Por responder a las órdenes de Yuum Chaac, el Dios de la lluvia, arriesgó su vida para salvar una semilla de maíz de un campo incendiado, ya que esta semilla era considerada indispensable para la vida.',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20)),
-                )*/
+                )
+              ],
+            ),
+          ),
+          Container(
+            child: Column(
+              children: <Widget>[
+                SizedBox(
+                  height: 50.0,
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 280.0,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage(
+                              'lib/src/recursos/P06_El_Pajaro_dziu.jpg'))),
+                ),
+                SizedBox(
+                  height: 20.0,
+                ),
+                Container(
+                  child: Text(
+                      'Como resultado de haberse adentrado en el incendio, Dziú quedó con los ojos rojos y el cuerpo gris.ue reconocido por Yuum Chaac y todos los pájaros, por lo que a partir de entonces, Dziú podría despreocuparse de la construcción de nidos para sus crías, pues podría poner sus huevos en los de cualquier pájaro, y serían cuidados por ellos como si fuesen propios.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 20)),
+                )
               ],
             ),
           ),
@@ -159,39 +163,4 @@ class Nivel1_maya extends StatelessWidget {
       ),
     );
   }
-}
-
-Widget _lista() {
-  return FutureBuilder(
-    future: menuProvider.cargarData(),
-    builder: (BuildContext contex, AsyncSnapshot<List<dynamic>> snapshot) {
-      return Column(children: [
-        _listaMayaUbicacion(snapshot.data),
-      ]);
-    },
-  );
-}
-
-Widget _listaMayaUbicacion(List<dynamic> data) {
-  log(data.toString());
-  final List<Widget> opciones = [];
-  List<Map> data2 = [
-    {
-      "nivel1_maya": [
-        {
-          "ubicacion":
-              "Los mayas se localizaron en Mesoamérica, desde las costas del océano Pacífico hasta la península de Yucatán en el mar Caribe. La cultura creada por los mayas prehispánicos se desarrolló en un vasto territorio: los actuales estados mexicanos de Yucatán, Cam­peche, Quintana Roo, parte de Tabasco y de Chiapas; Guatemala, Belice y un sector de Honduras."
-        }
-      ]
-    }
-  ];
-  /*data2.forEach((element) {
-    final widgetTemp = Text(element[0]['nivel1_maya']);
-    opciones.add(widgetTemp);
-    opciones.add(Divider());
-  });*/
-  //var widgetTemp = Text(data2[0]);
-  // opciones.add(widgetTemp);
-  //opciones.add(Divider());
-  return Text(data2.toString());
 }

@@ -50,11 +50,50 @@ flutter:
   - lib/src/recursos/aztecas.jpg
   - lib/src/recursos/incas.jpg
   - lib/src/recursos/fondo.jpg
+  - lib/src/recursos/ubicacionazteca.jpg
+  - lib/src/recursos/estructurasocialmaya.jpg
+  - lib/src/recursos/gobernanteazteca.jpg
+  - lib/src/recursos/ubicacionmaya.jpg
+  - lib/src/recursos/temploguerrerosmaya.jpg
+  - lib/src/recursos/tikalmaya.jpg
+  - lib/src/recursos/inscripcionesmayas.jpg
+  - lib/src/recursos/gobernantemaya.jpg
+  - lib/src/recursos/ubicacion.jpg
+  - lib/src/recursos/dioskukulkanmaya.jpg
+  - lib/src/recursos/dioshurakanmaya.jpg
+  - lib/src/recursos/diostepeumaya.jpg
+  - lib/src/recursos/ubicacioninca.jpg
+  - lib/src/recursos/gobernanteinca.jpg
+  - lib/src/recursos/machupichuinca.jpg
+  - lib/src/recursos/coricanchainca.jpg
+  - lib/src/recursos/sacsayhuamaninca.jpg
+  - lib/src/recursos/estructurainca.jpg
+  - lib/src/recursos/viracochainca.jpg
+  - lib/src/recursos/intiinca.jpg
+  - lib/src/recursos/mamaquillainca.jpg
+  - lib/src/recursos/universoinca.jpg
+  - lib/src/recursos/humanosinca.jpg
+  - lib/src/recursos/piedrainca.jpg
+  - lib/src/recursos/construccionazteca11.jpg
+  - lib/src/recursos/construccionaztec22.jpg
+  - lib/src/recursos/construccionazteca3.jpg
+  - lib/src/recursos/diosazteca.jpg
+  - lib/src/recursos/diosquetzalcoatl.jpg
+  - lib/src/recursos/dioscoatlicue.jpg
+  - lib/src/recursos/mitoazteca1.jpg
+  - lib/src/recursos/mitoazteca2.jpg
+  - lib/src/recursos/mitoazteca3.jpg
+  - lib/src/recursos/mitoazteca4.jpg
+  - lib/src/recursos/mitoazteca5.jpg
+  - lib/src/recursos/elpajarodziucartoon.jpg
+  - lib/src/recursos/P06_El_Pajaro_dziu.jpg
+  - data/menu_opts.json
+
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware.
+  # https://flutter.dev/assets-and-images/#resolution-aware.r
 
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
