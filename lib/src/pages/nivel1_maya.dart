@@ -31,7 +31,13 @@ class Nivel1_maya extends StatelessWidget {
                         fontSize: 25,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold)),
-                Container(child: _lista()),
+                Container(
+                  child: Text(
+                    'Los mayas se localizaron en Mesoamérica, desde las costas del océano Pacífico hasta la península de Yucatán en el mar Caribe. La cultura creada por los mayas prehispánicos se desarrolló en un vasto territorio: los actuales estados mexicanos de Yucatán, Cam­peche, Quintana Roo, parte de Tabasco y de Chiapas; Guatemala, Belice y un sector de Honduras.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
               ],
             ),
           ),
@@ -57,7 +63,12 @@ class Nivel1_maya extends StatelessWidget {
                         fontSize: 25,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold)),
-                /*Container(child:)*/
+                Container(
+                  child: Text(
+                      'Pachacútec (del quechua: Pacha Kutiq Inka Yupanki, «Inca del cambio del rumbo de la tierra, digno de estima»​, Cuzco, ca. 1400-Cuzco, ca. 1471) fue el noveno gobernante del estado Inca y quien lo convirtió de un simple curacazgo a un gran imperio: el Tahuantinsuyo.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 20)),
+                )
               ],
             ),
           ),
@@ -76,7 +87,7 @@ class Nivel1_maya extends StatelessWidget {
                               'lib/src/recursos/temploguerrerosmaya.jpg'))),
                 ),
                 SizedBox(
-                  height: 15.0,
+                  height: 30.0,
                 ),
                 Text('Construccion El Templo de los Guerreros:',
                     textAlign: TextAlign.center,
@@ -84,12 +95,12 @@ class Nivel1_maya extends StatelessWidget {
                         fontSize: 25,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold)),
-                /* Container(
+                Container(
                   child: Text(
-                      ,
+                      'Está ubicada en la región Cusco, provincia de Urubamba, distrito de Machupicchu, sobre el Valle Sagrado de los Incas, a 80 kilómetros al noroeste de la ciudad de Cusco, ciudad del Perú y por donde fluye el río Urubamba, río que atraviesa la cordillera y origina un cañón con clima de montaña tropical.',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20)),
-                )*/
+                )
               ],
             ),
           ),
@@ -114,12 +125,12 @@ class Nivel1_maya extends StatelessWidget {
                         fontSize: 25,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold)),
-                /* Container(
+                Container(
                   child: Text(
-                      ,
+                      'Ubicada en Guatemala, en el municipio de Flores, fue una metrópoli de suma importancia que tuvo la capacidad de albergar nada menos que 100 000 a 250 000 habitantes. El nombre de la ciudad se podría traducir como «el lugar de las voces» y fue construida, aproximadamente, en el año 600 a.E.C.',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20)),
-                )*/
+                )
               ],
             ),
           ),
@@ -146,12 +157,12 @@ class Nivel1_maya extends StatelessWidget {
                         fontSize: 25,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold)),
-                /* Container(
+                Container(
                   child: Text(
-                      ,
+                      'Construido en el período Clásico Tardío (alrededor de 650 E.C.), se impone como el templo más elevado de toda la civilización maya con 25 metros de altura. El responsable de su levantamiento es el rey Pakal. El nombre de este templo se debe a las inscripciones que decoran el santuario superior que cuentan la vida de este monarca.',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20)),
-                )*/
+                )
               ],
             ),
           ),
@@ -161,37 +172,37 @@ class Nivel1_maya extends StatelessWidget {
   }
 }
 
-Widget _lista() {
-  return FutureBuilder(
-    future: menuProvider.cargarData(),
-    builder: (BuildContext contex, AsyncSnapshot<List<dynamic>> snapshot) {
-      return Column(children: [
-        _listaMayaUbicacion(snapshot.data),
-      ]);
-    },
-  );
-}
+//Widget _lista() {
+///return FutureBuilder(
+// future: menuProvider.cargarData(),
+//builder: (BuildContext contex, AsyncSnapshot<List<dynamic>> snapshot) {
+//return Column(children: [
+//_listaMayaUbicacion(snapshot.data),
+// ]);
+//},
+//);
+//}
 
-Widget _listaMayaUbicacion(List<dynamic> data) {
-  log(data.toString());
-  final List<Widget> opciones = [];
-  List<Map> data2 = [
-    {
-      "nivel1_maya": [
-        {
-          "ubicacion":
-              "Los mayas se localizaron en Mesoamérica, desde las costas del océano Pacífico hasta la península de Yucatán en el mar Caribe. La cultura creada por los mayas prehispánicos se desarrolló en un vasto territorio: los actuales estados mexicanos de Yucatán, Cam­peche, Quintana Roo, parte de Tabasco y de Chiapas; Guatemala, Belice y un sector de Honduras."
-        }
-      ]
-    }
-  ];
-  /*data2.forEach((element) {
+//Widget _listaMayaUbicacion(List<dynamic> data) {
+//log(data.toString());
+//final List<Widget> opciones = [];
+//List<Map> data2 = [
+//{
+// "nivel1_maya": [
+//{
+// "ubicacion":
+//   "Los mayas se localizaron en Mesoamérica, desde las costas del océano Pacífico hasta la península de Yucatán en el mar Caribe. La cultura creada por los mayas prehispánicos se desarrolló en un vasto territorio: los actuales estados mexicanos de Yucatán, Cam­peche, Quintana Roo, parte de Tabasco y de Chiapas; Guatemala, Belice y un sector de Honduras."
+//}
+// ]
+//}
+//];
+/*data2.forEach((element) {
     final widgetTemp = Text(element[0]['nivel1_maya']);
     opciones.add(widgetTemp);
     opciones.add(Divider());
   });*/
-  //var widgetTemp = Text(data2[0]);
-  // opciones.add(widgetTemp);
-  //opciones.add(Divider());
-  return Text(data2.toString());
-}
+//var widgetTemp = Text(data2[0]);
+// opciones.add(widgetTemp);
+//opciones.add(Divider());
+// return Text(data2.toString())
+//}

@@ -87,6 +87,20 @@ flutter:
   - lib/src/recursos/mitoazteca5.jpg
   - lib/src/recursos/elpajarodziucartoon.jpg
   - lib/src/recursos/P06_El_Pajaro_dziu.jpg
+  - lib/src/recursos/organizacionMaya.jpg
+  - lib/src/recursos/gobernanteMayaOr.jpg
+  - lib/src/recursos/sarcedotemayaO.jpg
+  - lib/src/recursos/mayasguerreros.jpg
+  - lib/src/recursos/comercio-maya-5-chichen.jpg
+  - lib/src/recursos/esclavosmayas.jpg
+  - lib/src/recursos/nobleza.jpg
+  - lib/src/recursos/puebloinca.jpg
+  - lib/src/recursos/estructuraazteca.jpg
+  - lib/src/recursos/noblezaAzteca.jpg
+  - lib/src/recursos/realezaInca.jpg
+  - lib/src/recursos/puebloazteca.jpg
+  - lib/src/recursos/pobres2AZteca.jpg
+  - lib/src/recursos/esclavosAztecas.jpg
   - data/menu_opts.json
 
   #   - images/a_dot_burr.jpeg

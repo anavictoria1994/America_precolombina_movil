@@ -63,7 +63,7 @@ class Nivel1_inca extends StatelessWidget {
                         fontWeight: FontWeight.bold)),
                 Container(
                   child: Text(
-                      'Pachacútec (del quechua: Pacha Kutiq Inka Yupanki, «Inca del cambio del rumbo de la tierra, digno de estima»​, Cuzco, ca. 1400-Cuzco, ca. 1471) fue el noveno gobernante del estado Inca y quien lo convirtió de un simple curacazgo a un gran imperio: el Tahuantinsuyo.',
+                      'Halach uinic (en maya: Halvach Uinik, ‘Hombre de hecho; Hombre de mando’)era el nombre dado al máximo gobernante, jefe o régule —como se les llamaba en la época colonial— de una jurisdicción maya. No se trata de un nombre propio, sino de un cargo.',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20)),
                 )
@@ -95,7 +95,7 @@ class Nivel1_inca extends StatelessWidget {
                         fontWeight: FontWeight.bold)),
                 Container(
                   child: Text(
-                      'Está ubicada en la región Cusco, provincia de Urubamba, distrito de Machupicchu, sobre el Valle Sagrado de los Incas, a 80 kilómetros al noroeste de la ciudad de Cusco, ciudad del Perú y por donde fluye el río Urubamba, río que atraviesa la cordillera y origina un cañón con clima de montaña tropical.',
+                      'Situado en la ciudad de Chichén Itzá y rodeado de las asombrosas mil columnas, se presume que fue construido en el año 1200 E.C. En el interior se podrá encontrar un buen número de salas en forma de bóvedas, estando en la entrada una magistral escultura de Chac Mool, que significa «El gran jaguar rojo».',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20)),
                 )
