@@ -1,2 +1,8 @@
 # America_precolombina_movil
-Proyecto desarrollo de aplicaciones movil -Flutter/Dart.
+Proyecto Desarrollo Movil de Culturas Maya, Azteca e Inca.
+
+Desarrollado por:
+Ana Acuña 
+Hanier Peña 
+Helen Bonilla
+
