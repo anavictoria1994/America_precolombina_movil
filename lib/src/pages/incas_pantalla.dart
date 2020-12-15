@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:america_precolombina/src/pages/nivel1_inca.dart';
 import 'package:america_precolombina/src/pages/nivel2_inca.dart';
 import 'package:america_precolombina/src/pages/nivel3_inca.dart';
+import 'Board.dart';
 
 void onPress(int id, BuildContext context) {
   switch (id) {
@@ -121,7 +122,11 @@ class Incas extends StatelessWidget {
             FlatButton(
               height: 65.0,
               minWidth: 250.0,
-              onPressed: () {},
+              onPressed: () {
+                 Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => Board(),
+                    ));
+              },
               color: Colors.blue[300],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),

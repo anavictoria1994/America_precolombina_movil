@@ -87,6 +87,7 @@ flutter:
   - lib/src/recursos/mitoazteca5.jpg
   - lib/src/recursos/elpajarodziucartoon.jpg
   - lib/src/recursos/P06_El_Pajaro_dziu.jpg
+  - lib/src/recursos/meme.jpg
   - data/menu_opts.json
 
   #   - images/a_dot_burr.jpeg

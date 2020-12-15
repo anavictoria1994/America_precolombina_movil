@@ -173,7 +173,7 @@ Widget _lista() {
 }
 
 Widget _listaMayaUbicacion(List<dynamic> data) {
-  log(data.toString());
+  //log(data.toString());
   final List<Widget> opciones = [];
   List<Map> data2 = [
     {
