@@ -1,29 +1,9 @@
+import 'package:flutter/material.dart';
+
 import 'package:america_precolombina/src/pages/nivel1_maya.dart';
 import 'package:america_precolombina/src/pages/nivel2_maya.dart';
-import 'package:flutter/material.dart';
 import 'Board.dart';
 import 'package:america_precolombina/src/pages/nivel3_maya.dart';
-
-void onPress(int id, BuildContext context) {
-  switch (id) {
-    case 0:
-      Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => Nivel1_maya(),
-      ));
-      break;
-    case 1:
-      Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => Nivel2_maya(),
-      ));
-      break;
-    case 2:
-      Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => Nivel3_maya(),
-      ));
-      break;
-    default:
-  }
-}
 
 class Mayas extends StatelessWidget {
   List maya_nivel = ["Nivel 1", "Nivel 2", "Nivel 3"];
@@ -123,9 +103,9 @@ class Mayas extends StatelessWidget {
               height: 65.0,
               minWidth: 250.0,
               onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => Board(),
-                    ));
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => Board(),
+                ));
               },
               color: Colors.blue[300],
               shape: RoundedRectangleBorder(
@@ -139,5 +119,26 @@ class Mayas extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+void onPress(int id, BuildContext context) {
+  switch (id) {
+    case 0:
+      Navigator.of(context).push(MaterialPageRoute(
+        builder: (context) => Nivel1_maya(),
+      ));
+      break;
+    case 1:
+      Navigator.of(context).push(MaterialPageRoute(
+        builder: (context) => Nivel2_maya(),
+      ));
+      break;
+    case 2:
+      Navigator.of(context).push(MaterialPageRoute(
+        builder: (context) => Nivel3_maya(),
+      ));
+      break;
+    default:
   }
 }

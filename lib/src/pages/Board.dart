@@ -37,9 +37,12 @@ class _BoardState extends State<Board> {
     return SafeArea(
       child: Container(
         height: size.height,
-        color: Colors.lightGreen,
+        color: Colors.blue[400],
         child: Column(
           children: <Widget>[
+            SizedBox(
+              height: 30.0,
+            ),
             MyTitle(size),
             Grid(numbers, size, clickGrid),
             Menu(reset, move, secondsPassed, size),
@@ -115,20 +118,19 @@ class _BoardState extends State<Board> {
                           width: 350.0,
                           height: 220.0,
                           decoration: BoxDecoration(
-                          image: DecorationImage(
-                          image: AssetImage("lib/src/recursos/meme.jpg"),
-                          fit: BoxFit.fill,
+                            image: DecorationImage(
+                              image: AssetImage("lib/src/recursos/meme.jpg"),
+                              fit: BoxFit.fill,
+                            ),
                           ),
-                          ),
-                          
                         ),
                         SizedBox(
                           width: 220.0,
                           child: RaisedButton(
                             onPressed: () {
                               Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => HomePage(),
-                            ));
+                                builder: (context) => HomePage(),
+                              ));
                             },
                             child: Text(
                               "Cerrar",
