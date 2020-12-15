@@ -1,12 +1,10 @@
-import 'dart:developer';
-import 'package:america_precolombina/src/providers/menu_provider.dart';
 import 'package:flutter/material.dart';
 
-class Nivel1_maya extends StatelessWidget {
+class Nivel3_inca extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Nivel 1 maya')),
+      appBar: AppBar(title: Text('Nivel 3 inca')),
       body: PageView(
         children: [
           Container(
@@ -21,23 +19,23 @@ class Nivel1_maya extends StatelessWidget {
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(
-                              'lib/src/recursos/ubicacionmaya.jpg'))),
+                              'lib/src/recursos/viracochainca.jpg'))),
                 ),
                 SizedBox(
                   height: 20.0,
                 ),
-                Text('Ubicación:',
+                Text('Dios Viracocha:',
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold)),
                 Container(
                   child: Text(
-                    'Los mayas se localizaron en Mesoamérica, desde las costas del océano Pacífico hasta la península de Yucatán en el mar Caribe. La cultura creada por los mayas prehispánicos se desarrolló en un vasto territorio: los actuales estados mexicanos de Yucatán, Cam­peche, Quintana Roo, parte de Tabasco y de Chiapas; Guatemala, Belice y un sector de Honduras.',
+                    'También conocido como Wiracocha es el dios creador, la esencia del origen y se le considera la primera divinidad por excelencia de los peruanos, en cuanto a su culto podemos decir que inicialmente estaba destinado exclusivamente a la nobleza. Se dice que surgió de las aguas y posteriormente creó el cielo y la tierra.',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20),
                   ),
-                ),
+                )
               ],
             ),
           ),
@@ -52,20 +50,19 @@ class Nivel1_maya extends StatelessWidget {
                   height: 300.0,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage(
-                              'lib/src/recursos/gobernantemaya.jpg'))),
+                          image: AssetImage('lib/src/recursos/intiinca.jpg'))),
                 ),
                 SizedBox(
                   height: 30.0,
                 ),
-                Text('Gobernante destacado:',
+                Text('Dios Inti:',
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold)),
                 Container(
                   child: Text(
-                      'Pachacútec (del quechua: Pacha Kutiq Inka Yupanki, «Inca del cambio del rumbo de la tierra, digno de estima»​, Cuzco, ca. 1400-Cuzco, ca. 1471) fue el noveno gobernante del estado Inca y quien lo convirtió de un simple curacazgo a un gran imperio: el Tahuantinsuyo.',
+                      'hijo del dios creador del universo, considerado el dios del sol, y antepasado de los primeros reyes del imperio Inca, es uno de los dioses incas más venerados por los habitantes de la región Inca debido a su relación con la naturaleza.',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20)),
                 )
@@ -80,16 +77,16 @@ class Nivel1_maya extends StatelessWidget {
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width,
-                  height: 250.0,
+                  height: 280.0,
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(
-                              'lib/src/recursos/temploguerrerosmaya.jpg'))),
+                              'lib/src/recursos/mamaquillainca.jpg'))),
                 ),
                 SizedBox(
-                  height: 30.0,
+                  height: 20.0,
                 ),
-                Text('Construccion El Templo de los Guerreros:',
+                Text('Dios Mama Quilla:',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontSize: 25,
@@ -97,7 +94,7 @@ class Nivel1_maya extends StatelessWidget {
                         fontWeight: FontWeight.bold)),
                 Container(
                   child: Text(
-                      'Está ubicada en la región Cusco, provincia de Urubamba, distrito de Machupicchu, sobre el Valle Sagrado de los Incas, a 80 kilómetros al noroeste de la ciudad de Cusco, ciudad del Perú y por donde fluye el río Urubamba, río que atraviesa la cordillera y origina un cañón con clima de montaña tropical.',
+                      'Tepeu era un dios del cielo con poderes  y sabiduría, el cual participó en la creación de la humanidad, este proceso de creación tuvo dos intentos fallidos hasta que por tercera vez, pudieron crear a un ser con alma, cuerpo y espíritu capaz de brindarles culto y adoración.',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20)),
                 )
@@ -112,22 +109,23 @@ class Nivel1_maya extends StatelessWidget {
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width,
-                  height: 250.0,
+                  height: 280.0,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage('lib/src/recursos/tikalmaya.jpg'))),
+                          image:
+                              AssetImage('lib/src/recursos/universoinca.jpg'))),
                 ),
                 SizedBox(
-                  height: 40.0,
+                  height: 20.0,
                 ),
-                Text('Construccion La Ciudad de Tikal:',
+                Text('Mito Inca:',
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold)),
                 Container(
                   child: Text(
-                      'Ubicada en Guatemala, en el municipio de Flores, fue una metrópoli de suma importancia que tuvo la capacidad de albergar nada menos que 100 000 a 250 000 habitantes. El nombre de la ciudad se podría traducir como «el lugar de las voces» y fue construida, aproximadamente, en el año 600 a.E.C.',
+                      'Uno de los mitos incas más populares cuenta que el dios andino Viracocha dio origen a un universo sin luz habitado por gigantes que lo desobedecieron. Esto motivó a Viracocha a crear lluvias torrenciales hasta ver a la tierra sumergida',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20)),
                 )
@@ -142,24 +140,44 @@ class Nivel1_maya extends StatelessWidget {
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width,
-                  height: 240.0,
+                  height: 280.0,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage(
-                              'lib/src/recursos/inscripcionesmayas.jpg'))),
+                          image:
+                              AssetImage('lib/src/recursos/humanosinca.jpg'))),
                 ),
                 SizedBox(
-                  height: 30.0,
+                  height: 20.0,
                 ),
-                Text('Construccion El Templo de las Inscripciones:',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 25,
-                        color: Colors.blue,
-                        fontWeight: FontWeight.bold)),
                 Container(
                   child: Text(
-                      'Construido en el período Clásico Tardío (alrededor de 650 E.C.), se impone como el templo más elevado de toda la civilización maya con 25 metros de altura. El responsable de su levantamiento es el rey Pakal. El nombre de este templo se debe a las inscripciones que decoran el santuario superior que cuentan la vida de este monarca.',
+                      'Viracocha decidió crear esta vez seres semejantes a él, y así fue como nacieron los seres humanos. Luego trajo la luz –mediante la creación de la luna, el sol y las estrellas. Para enseñarle a los hombres, Viracocha envió a Viracochan, un hombre que sería ejemplo de una vida en armonía, siguiendo un comportamiento de paz y dedicado a la cosecha y a un gobierno lleno de sabiduría.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 20)),
+                )
+              ],
+            ),
+          ),
+          Container(
+            child: Column(
+              children: <Widget>[
+                SizedBox(
+                  height: 50.0,
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 280.0,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image:
+                              AssetImage('lib/src/recursos/piedrainca.jpg'))),
+                ),
+                SizedBox(
+                  height: 20.0,
+                ),
+                Container(
+                  child: Text(
+                      'Con el paso del tiempo y a pesar de la generosidad de Viracocha, muchos hombres comenzaron a burlarse de su dios, siendo transformados en piedras. Los hombres aprendieron que aunque Viracocha podía ser bondadoso, también tenía el poder de castigarlos si estos no actuaban conducidos por el bien.',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20)),
                 )
@@ -171,38 +189,3 @@ class Nivel1_maya extends StatelessWidget {
     );
   }
 }
-
-//Widget _lista() {
-///return FutureBuilder(
-// future: menuProvider.cargarData(),
-//builder: (BuildContext contex, AsyncSnapshot<List<dynamic>> snapshot) {
-//return Column(children: [
-//_listaMayaUbicacion(snapshot.data),
-// ]);
-//},
-//);
-//}
-
-//Widget _listaMayaUbicacion(List<dynamic> data) {
-//log(data.toString());
-//final List<Widget> opciones = [];
-//List<Map> data2 = [
-//{
-// "nivel1_maya": [
-//{
-// "ubicacion":
-//   "Los mayas se localizaron en Mesoamérica, desde las costas del océano Pacífico hasta la península de Yucatán en el mar Caribe. La cultura creada por los mayas prehispánicos se desarrolló en un vasto territorio: los actuales estados mexicanos de Yucatán, Cam­peche, Quintana Roo, parte de Tabasco y de Chiapas; Guatemala, Belice y un sector de Honduras."
-//}
-// ]
-//}
-//];
-/*data2.forEach((element) {
-    final widgetTemp = Text(element[0]['nivel1_maya']);
-    opciones.add(widgetTemp);
-    opciones.add(Divider());
-  });*/
-//var widgetTemp = Text(data2[0]);
-// opciones.add(widgetTemp);
-//opciones.add(Divider());
-// return Text(data2.toString())
-//}

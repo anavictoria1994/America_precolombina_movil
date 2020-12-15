@@ -1,77 +1,141 @@
 import 'package:flutter/material.dart';
+import 'package:america_precolombina/src/pages/nivel1_inca.dart';
+import 'package:america_precolombina/src/pages/nivel2_inca.dart';
+import 'package:america_precolombina/src/pages/nivel3_inca.dart';
+import 'Board.dart';
+
+void onPress(int id, BuildContext context) {
+  switch (id) {
+    case 0:
+      Navigator.of(context).push(MaterialPageRoute(
+        builder: (context) => Nivel1_inca(),
+      ));
+      break;
+    case 1:
+      Navigator.of(context).push(MaterialPageRoute(
+        builder: (context) => Nivel2_inca(),
+      ));
+      break;
+    case 2:
+      Navigator.of(context).push(MaterialPageRoute(
+        builder: (context) => Nivel3_inca(),
+      ));
+      break;
+    default:
+  }
+}
 
 class Incas extends StatelessWidget {
+  List maya_nivel = ["Nivel 1", "Nivel 2", "Nivel 3"];
+  List maya_temas = [
+    "Ubicación, Gobernantes, Construcciones",
+    "Divisiones, Caracteristicas",
+    "Dioses y Mitos"
+  ];
+  List maya_img = [
+    "lib/src/recursos/ubicacion.jpg",
+    "lib/src/recursos/viracochainca.jpg",
+    "lib/src/recursos/diostepeumaya.jpg"
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cultura Incas'),
+        title: Text('Cultura Inca'),
       ),
-      body: SingleChildScrollView(
-        child: Center(
-          child: Column(
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.all(12.0),
-                child: Column(
-                  children: <Widget>[
-                    Divider(),
-                    Text('Ubicación:'),
-                    Divider(),
-                    Text(
-                      'Los incas fueron la civilización más compleja que se desarrolló en la América del Sur, constituyendo un vasto imperio que abarcó los actuales países de Perú, Bolivia, gran parte de Ecuador, el noroeste de Argentina y el norte de Chile.',
-                      textAlign: TextAlign.center,
-                    )
-                  ],
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('lib/src/recursos/fondo.jpg'),
+                repeat: ImageRepeat.repeat)),
+        child: Column(
+          children: [
+            ListView.builder(
+              itemCount: 3,
+              shrinkWrap: true,
+              itemBuilder: (BuildContext context, int index) => Container(
+                width: MediaQuery.of(context).size.width,
+                padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 15.0),
+                child: Card(
+                  elevation: 5.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5.0)),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Container(
+                              width: 85.0,
+                              height: 50.0,
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage(maya_img[index]))),
+                            ),
+                            SizedBox(width: 20.0),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(maya_nivel[index],
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 18.0,
+                                        fontWeight: FontWeight.bold)),
+                                Container(
+                                  width: 100.0,
+                                  child: Text(maya_temas[index],
+                                      style: TextStyle(color: Colors.grey)),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                        Container(
+                          alignment: Alignment.center,
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 10.0, vertical: 10.0),
+                          child: FlatButton(
+                            onPressed: () => onPress(index, context),
+                            color: Colors.blue[300],
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20.0)),
+                            child: Text(
+                              "Empezar",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(12.0),
-                child: Column(
-                  children: <Widget>[
-                    Divider(),
-                    Text('Gobernante destacados:'),
-                    Divider(),
-                    Text(
-                      'Pachacútec (del quechua: Pacha Kutiq Inka Yupanki, «Inca del cambio del rumbo de la tierra, digno de estima»​, Cuzco, ca. 1400-Cuzco, ca. 1471) fue el noveno gobernante del estado Inca y quien lo convirtió de un simple curacazgo a un gran imperio: el Tahuantinsuyo.,',
-                      textAlign: TextAlign.center,
-                    )
-                  ],
-                ),
+            ),
+            FlatButton(
+              height: 65.0,
+              minWidth: 250.0,
+              onPressed: () {
+                 Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => Board(),
+                    ));
+              },
+              color: Colors.blue[300],
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0)),
+              child: Text(
+                "Jugar",
+                style: TextStyle(color: Colors.white),
               ),
-              Container(
-                padding: EdgeInsets.all(12.0),
-                child: Column(
-                  children: <Widget>[
-                    Divider(),
-                    Text('Construcciones destacados:'),
-                    Divider(),
-                    Text('1. Machu Picchu'),
-                    Divider(),
-                    Text(
-                      ' Construida antes del siglo XV, ubicada en la Cordillera Oriental del sur de Perú, en la cadena montañosa de Los Andes a 2430 metros sobre el nivel del mar. Está ubicada en la región Cusco, provincia de Urubamba, distrito de Machupicchu, sobre el Valle Sagrado de los Incas, a 80 kilómetros al noroeste de la ciudad de Cusco, ciudad del Perú y por donde fluye el río Urubamba, río que atraviesa la cordillera y origina un cañón con clima de montaña tropical. ',
-                      textAlign: TextAlign.center,
-                    ),
-                    Divider(),
-                    Text('2. Coricancha'),
-                    Divider(),
-                    Text(
-                      'Coricancha, Ccorichancha o Qorikancha (en quechua: Quri Kancha, ‘Templo dorado’) fue el principal templo inca, el cual fue posteriormente destruido por los españoles durante el proceso de colonización. El yacimiento se encuentra en la ciudad de Cuzco en Perú.',
-                      textAlign: TextAlign.center,
-                    ),
-                    Divider(),
-                    Text('3. Sacsayhuamán'),
-                    Divider(),
-                    Text(
-                      ' La "fortaleza ceremonial" de Sacsayhuamán es, con sus muros megalíticos, la mayor obra arquitectónica que realizaron los incas durante su apogeo. Desde la fortaleza se observa una singular vista panorámica de los entornos, incluyendo la ciudad del Cuzco.',
-                      textAlign: TextAlign.center,
-                    ),
-                    Divider(),
-                  ],
-                ),
-              )
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
