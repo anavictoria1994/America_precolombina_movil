@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
+
 import 'package:america_precolombina/src/pages/aztecas_pantalla.dart';
 import 'package:america_precolombina/src/pages/incas_pantalla.dart';
 import 'package:america_precolombina/src/pages/mayas_pantalla.dart';
-import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
   @override
