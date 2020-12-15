@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:america_precolombina/src/pages/nivel1_azteca.dart';
 import 'package:america_precolombina/src/pages/nivel2_azteca.dart';
 import 'package:america_precolombina/src/pages/nivel3_azteca.dart';
+import 'Board.dart';
 
 class Aztecas extends StatelessWidget {
   List maya_nivel = ["Nivel 1", "Nivel 2", "Nivel 3"];
@@ -100,7 +101,11 @@ class Aztecas extends StatelessWidget {
             FlatButton(
               height: 65.0,
               minWidth: 250.0,
-              onPressed: () {},
+              onPressed: () {
+                 Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => Board(),
+                    ));
+              },
               color: Colors.blue[300],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),

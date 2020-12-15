@@ -1,7 +1,8 @@
 import 'package:america_precolombina/src/pages/nivel1_maya.dart';
 import 'package:america_precolombina/src/pages/nivel2_maya.dart';
-import 'package:america_precolombina/src/pages/nivel3_maya.dart';
 import 'package:flutter/material.dart';
+import 'Board.dart';
+import 'package:america_precolombina/src/pages/nivel3_maya.dart';
 
 void onPress(int id, BuildContext context) {
   switch (id) {
@@ -121,7 +122,11 @@ class Mayas extends StatelessWidget {
             FlatButton(
               height: 65.0,
               minWidth: 250.0,
-              onPressed: () {},
+              onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => Board(),
+                    ));
+              },
               color: Colors.blue[300],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
